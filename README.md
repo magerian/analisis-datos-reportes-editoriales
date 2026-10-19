@@ -1,45 +1,37 @@
-# [Proyecto Estrella] Análisis Predictivo de Demanda, Reducción de Costos y Planificación de Impresión para la Dirección General
+# Planificación de demanda y optimización de inventario
 
-## 📌 Descripción del Proyecto
-Este es el proyecto de mayor impacto financiero y estratégico de mi portafolio. Desarrolle un modelo predictivo de planificación de demanda (*Demand Planning*) para la Dirección General del sector editorial. El sistema consolida datos en tiempo real de múltiples subsistemas de ventas e inventarios físicos para proyectar con exactitud las tiradas de impresión necesarias a futuro. Esto permitió cumplir con las ventas presupuestadas eliminando por completo la sobreimpresión, optimizando la rentabilidad y evitando la saturación inútil del espacio volumétrico en los almacenes.
+**Caso real desarrollado en Rubinzal y Asociados S.A.** | Sector editorial | Santa Fe, Argentina
 
----
+## Resumen
 
-## 🚀 1. El Desafío del Negocio e Impacto Directivo
-La Dirección operaba con una desconexión crítica entre los departamentos de Ventas, Producción y Logística. Las decisiones de impresión se tomaban bajo intuición o promedios simples, lo que generaba:
-*   **Sobreimpresión masiva:** Capital de trabajo inmovilizado en libros de baja rotación.
-*   **Costos de almacenamiento ocultos:** Ocupación inútil de espacio volumétrico (m³) preciado en el almacén.
-*   **Fricción con las metas financieras:** Riesgo constante de no cubrir las ventas presupuestadas por falta de stock de títulos con alta demanda espontánea.
+Desarrollé un modelo de planificación de demanda para apoyar las decisiones de impresión y abastecimiento. El trabajo integró históricos de ventas de distintos subsistemas con el inventario físico disponible, para estimar las tiradas necesarias y evitar producir ejemplares por encima de la demanda.
 
-Este proyecto unificó los sistemas de la compañía, convirtiéndose en la herramienta principal de control presupuestario y operativo para la Alta Gerencia.
+## Contexto y problema
 
----
+Ventas, producción y logística utilizaban información con distintas granularidades temporales y el inventario disponible debía considerarse antes de definir nuevas tiradas. La planificación necesitaba mejorar la precisión de las decisiones, reducir el capital inmovilizado en títulos de baja rotación y sostener la disponibilidad de los productos con demanda.
 
-## 🛠️ 2. Arquitectura de Datos y Enfoque Técnico
-*   **Integración de Subsistemas Complejos:** Consolidación de flujos de "datos vivos" con diferentes granularidades temporales (métricas de ventas semanales para tendencias cortas, mensuales para estacionalidad y anuales para comportamiento histórico).
-*   **Análisis de Inventario Real:** Cruce automatizado de existencias físicas actuales para calcular el stock neto necesario antes de mandar a producción.
-*   **Modelado Predictivo de Tiradas:** Algoritmo lógico de proyección enfocado en la optimización del suministro (*Supply Chain Forecasting*) ajustado a las metas comerciales de la empresa.
+## Mi contribución
 
----
+- Consolidé información histórica de ventas con distintas granularidades (semanal, mensual y anual).
+- Crucé las series de ventas con el stock físico disponible.
+- Desarrollé un modelo de planificación para estimar tiradas futuras según la demanda proyectada y el inventario neto.
+- Presenté escenarios e indicadores para apoyar decisiones de Dirección sobre producción, presupuesto y espacio de almacenamiento.
 
-## 📊 3. Metodología Analítica Implementada
+## Resultados obtenidos
 
-### Fase 1: Sincronización e Ingesta de Datos Vivos
-*   Extracción y normalización de datos procedentes de los subsistemas de facturación y puntos de venta.
-*   Tratamiento de series temporales para identificar picos de demanda según épocas del año (estacionalidad editorial).
+- Se eliminó la sobreimpresión excedente en el alcance del proyecto.
+- Se redujo el capital de trabajo inmovilizado en inventario de baja rotación.
+- Se liberó espacio de almacenamiento y se mejoró la disponibilidad para cumplir los objetivos comerciales.
+- La planificación pasó a apoyarse en información consolidada y análisis de demanda, en lugar de promedios simples o decisiones intuitivas.
 
-### Fase 2: Desarrollo del Algoritmo de Proyección
-*   Diseño de la matriz de decisión: `[Venta Presupuestada Futura] - [Stock Real Neto] + [Margen de Seguridad de Seguridad Volumétrica] = [Tirada de Impresión Óptima]`.
-*   Monitoreo del espacio físico: Restricción del modelo analítico basada en el volumen físico disponible en almacén para asegurar que la producción fuera sustentable en el espacio físico.
+## Herramientas y métodos
 
-### Fase 3: Reportes de Control Directivo
-*   Visualización de los escenarios de producción idóneos frente a los costos de impresión para que la Dirección General aprobara presupuestos con base científica.
+Análisis de series temporales, consolidación y limpieza de datos, análisis de inventario y planificación de demanda. Las herramientas técnicas y el código específicos se detallarán únicamente donde representen fielmente el trabajo realizado y puedan compartirse.
 
----
+## Alcance y confidencialidad
 
-## 📈 4. Resultados Financieros y Operativos Logrados
-*   **Cero Sobreimpresión:** Eliminación total del gasto innecesario en papel, tinta y talleres de impresión por títulos excedentes.
-*   **Eficiencia de Almacenamiento Sostenible:** Liberación y optimización del espacio volumétrico, asegurando que el almacén nunca se quede sin capacidad de maniobra.
-*   **Cumplimiento del Presupuesto Comercial:** Garantía absoluta de disponibilidad de stock para alcanzar las metas de ventas proyectadas por la Dirección, maximizando la rentabilidad neta del catálogo.
-*   **Transformación Cultural:** Migración de una gestión basada en corazonadas a una cultura corporativa 100% impulsada por datos (*Data-Driven*).
+Este es un caso de experiencia profesional real. No se publican datos de ventas, inventario, costos ni información interna de la empresa. Los resultados se describen cualitativamente para preservar la información de negocio. Si se incorporan cifras, serán datos que pueda compartir y contextualizar con período, alcance y base de comparación.
 
+## Sobre mí
+
+Claudio Domreze | Analista de Supply Chain con experiencia en logística, compras, inventarios y análisis de datos. Actualmente curso Google Data Analytics.
